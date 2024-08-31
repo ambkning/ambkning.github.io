@@ -11,7 +11,7 @@ if ($ip_dec >= $lower_dec and $ip_dec <= $upper_dec) $ok = true;
 }
 if (!$ok)die();
 ///////////////////
-define('API_TOKEN' , '7490217379:AAFrK7ByE7jnTgIIp5KY-7lFT3iu7W1grVQ');
+define('API_TOKEN' , '7294172678:AAHeIH5yVnuhF9Zz7QFDqF-y727ytyTH-ks');
 //////////////////
 function bot($method,$datas=[]){$ch = curl_init();curl_setopt($ch,CURLOPT_URL,'https://api.telegram.org/bot'.API_TOKEN.'/'.$method );curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);curl_setopt($ch,CURLOPT_POSTFIELDS,$datas);return json_decode(curl_exec($ch));
 }
